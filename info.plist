@@ -145,7 +145,7 @@
 				<key>keyword</key>
 				<string>svgo</string>
 				<key>subtext</key>
-				<string>Optimize selected SVG markup</string>
+				<string>Optimize copied SVG markup</string>
 				<key>text</key>
 				<string>SVGO</string>
 				<key>withspace</key>
