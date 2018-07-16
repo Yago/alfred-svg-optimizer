@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Yago",
   "license": "MIT",
+  "scripts": {
+		"postinstall": "alfy-init",
+		"preuninstall": "alfy-cleanup"
+	},
   "dependencies": {
     "alfy": "^0.7.0",
     "svgo": "^1.0.5"
