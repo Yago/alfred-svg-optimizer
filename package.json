@@ -1,7 +1,7 @@
 {
-  "name": "svgo",
+  "name": "alfred-svg-optimmizer",
   "version": "1.0.0",
-  "description": "Optimize selected SVG markup",
+  "description": "Optimize copied SVG markup",
   "main": "index.js",
   "author": "Yago",
   "license": "MIT",
