@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>svgo</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>33EB3C19-9F02-4EE8-B206-3B053C66CD31</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DFC1720F-16B1-4E41-B4BE-30B1695F42EC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>56BEEA80-4831-4EA2-A271-215D401F234D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>33EB3C19-9F02-4EE8-B206-3B053C66CD31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BC878D8C-A5CD-44EA-AA03-BD1F32276AA0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FFF5CE4B-17CA-4E37-BD4E-31A006584EC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D0C00144-7FBC-4524-B9DB-85F4808A98EA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BC878D8C-A5CD-44EA-AA03-BD1F32276AA0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DFC1720F-16B1-4E41-B4BE-30B1695F42EC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F86F5467-46B8-4DB8-88AE-89173B39997C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F86F5467-46B8-4DB8-88AE-89173B39997C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D0C00144-7FBC-4524-B9DB-85F4808A98EA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Yago</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>SVGO</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DFC1720F-16B1-4E41-B4BE-30B1695F42EC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>FFF5CE4B-17CA-4E37-BD4E-31A006584EC3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>svgo</string>
+				<key>subtext</key>
+				<string>Optimize selected SVG markup</string>
+				<key>text</key>
+				<string>SVGO</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>56BEEA80-4831-4EA2-A271-215D401F234D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\{\n\t"items": "</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>F86F5467-46B8-4DB8-88AE-89173B39997C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>json</key>
+				<string>{
+  "alfredworkflow" : {
+    "arg" : "{clipboard}",
+    "config" : {
+    },
+    "variables" : {
+      "removeDoctype": true,
+      "removeXMLProcInst": true,
+      "removeComments": true,
+      "removeMetadata": true,
+      "removeXMLNS": false,
+      "removeEditorsNSData": true,
+      "cleanupAttrs": true,
+      "inlineStyles": true,
+      "minifyStyles": true,
+      "convertStyleToAttrs": true,
+      "cleanupIDs": true,
+      "removeRasterImages": false,
+      "removeUselessDefs": true,
+      "cleanupNumericValues": true,
+      "cleanupListOfValues": false,
+      "convertColors": true,
+      "removeUnknownsAndDefaults": true,
+      "removeNonInheritableGroupAttrs": true,
+      "removeUselessStrokeAndFill": true,
+      "removeViewBox": false,
+      "cleanupEnableBackground": true,
+      "removeHiddenElems": true,
+      "removeEmptyText": true,
+      "convertShapeToPath": true,
+      "moveElemsAttrsToGroup": true,
+      "moveGroupAttrsToElems": true,
+      "collapseGroups": true,
+      "convertPathData": true,
+      "convertTransform": true,
+      "removeEmptyAttrs": true,
+      "removeEmptyContainers": true,
+      "mergePaths": true,
+      "removeUnusedNS": true,
+      "sortAttrs": false,
+      "removeTitle": true,
+      "removeDesc": true,
+      "removeDimensions": true,
+      "removeStyleElement": false,
+      "removeScriptElement": false
+    }
+  }
+}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.json</string>
+			<key>uid</key>
+			<string>33EB3C19-9F02-4EE8-B206-3B053C66CD31</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>\</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>BC878D8C-A5CD-44EA-AA03-BD1F32276AA0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\"\n\}</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>D0C00144-7FBC-4524-B9DB-85F4808A98EA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>33EB3C19-9F02-4EE8-B206-3B053C66CD31</key>
+		<dict>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
+		<key>56BEEA80-4831-4EA2-A271-215D401F234D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>480</integer>
+		</dict>
+		<key>BC878D8C-A5CD-44EA-AA03-BD1F32276AA0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1370</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
+		<key>D0C00144-7FBC-4524-B9DB-85F4808A98EA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1280</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
+		<key>DFC1720F-16B1-4E41-B4BE-30B1695F42EC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1000</integer>
+			<key>ypos</key>
+			<integer>480</integer>
+		</dict>
+		<key>F86F5467-46B8-4DB8-88AE-89173B39997C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1190</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
+		<key>FFF5CE4B-17CA-4E37-BD4E-31A006584EC3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1480</integer>
+			<key>ypos</key>
+			<integer>480</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

@@ -1,0 +1,12 @@
+{
+  "name": "svgo",
+  "version": "1.0.0",
+  "description": "Optimize selected SVG markup",
+  "main": "index.js",
+  "author": "Yago",
+  "license": "MIT",
+  "dependencies": {
+    "alfy": "^0.7.0",
+    "svgo": "^1.0.5"
+  }
+}
