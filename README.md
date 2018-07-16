@@ -2,6 +2,8 @@
 
 Let you optimize through [SVGO](https://github.com/svg/svgo) your copied SVG markup.
 
+![screenshot](alfred-svgo.gif)
+
 # [📥 DOWNLOAD](SVGO.alfredworkflow)
 
 ## Settings
